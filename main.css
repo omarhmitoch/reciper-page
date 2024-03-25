@@ -58,7 +58,7 @@ body{
 	font-size: 40px;
 	font-family: 'Young serif';
 	font-weight: 400;
-	margin-bottom: 20px;
+	margin-bottom: 24px;
 	line-height: 100%;
 }
 .main p {
@@ -92,7 +92,7 @@ body{
 .timingWrapper .field::before{
 	content: "";
 	position: absolute;
-	left:0;
+	left:8px;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 4px;
@@ -161,6 +161,7 @@ body{
 .nutritionWrapper p{
 	color: var(--wenge-brown);
 	line-height: 150%;
+	margin-bottom: 24px;
 }
 .nutritionWrapper .field{
 	width: 100%;
@@ -180,6 +181,8 @@ body{
 }
 .nutritionWrapper .field .label{
 	padding-left: 32px;
+	font-weight: 400;
+	color: var(--wenge-brown)
 }
 .nutritionWrapper .field .value{
 	text-align: left;
