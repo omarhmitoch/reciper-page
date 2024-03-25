@@ -1,0 +1,220 @@
+@font-face {
+	font-family: 'Outfit';
+	src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format('truetype-variations');
+	font-weight: 100 900;
+}
+@font-face {
+	font-family: 'Young Serif';
+	src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+	font-weight: 400;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+:root{
+	--nutmeg: hsl(14, 45%, 36%);
+	--dark-rasberry: hsl(332, 51%, 32%);
+	--white: hsl(0, 0%, 100%);
+	--rose-white: hsl(330, 100%, 98%);
+	--eggshell: hsl(30, 54%, 90%);
+	--light-grey: hsl(30, 18%, 87%);
+	--wenge-brown: hsl(30, 10%, 34%);
+	--dark-charcoal: hsl(24, 5%, 18%);
+}
+a{
+	text-decoration: none;
+	color: var(--nutmeg);
+}
+html,body{
+	font-size: 146x;
+}
+body{
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 123px 0;
+	background-color: var(--eggshell);
+}
+.main{
+	background: var(--white);
+	padding: 40px;
+	border-radius: 24px;
+	display: flex;
+	flex-direction: column;
+	max-width: 736px;
+	margin: 0 auto;
+}
+.main img{
+	max-height: 300px;
+	object-fit: cover;
+	border-radius: 12px;
+	margin-bottom: 40px;
+}
+.main h1{
+	color: var(--dark-charcoal);
+	font-size: 40px;
+	font-family: 'Young serif';
+	font-weight: 400;
+	margin-bottom: 20px;
+	line-height: 100%;
+}
+.main p {
+	font-family: 'Outfit';
+	color: var(--wenge-brown);
+	line-height: 150%;
+}
+.timingWrapper{
+	background-color: var(--rose-white);
+	padding: 28px;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	margin: 32px 0;
+}
+.timingWrapper h3{
+	color: var(--dark-rasberry);
+	font-size: 20px;
+	line-height: 100%;
+	font-family: 'outfit';
+	margin-bottom: 16px;
+}
+.timingWrapper .field{
+	margin-bottom: 8px;
+	padding-left: 40px;
+	position: relative;
+	color: var(--wenge-brown);
+	font-family: 'outfit';
+	line-height: 150%;
+}
+.timingWrapper .field::before{
+	content: "";
+	position: absolute;
+	left:0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 4px;
+	height: 4px;
+	border-radius: 4px;
+	background-color: var(--dark-rasberry);
+}
+.timingWrapper .field span{
+	font-weight: 600;
+}
+.ingredientsWrapper h2,
+.instructionsWrapper h2,
+.nutritionWrapper h2{
+	font-size: 28px;
+	line-height: 100%;
+	color: var(--nutmeg);
+	font-family: 'young serif';
+	font-weight: 400;
+	margin-bottom: 24px;
+}
+.ingredientsWrapper .ingredient{
+	padding-left: 40px;
+	color: var(--wenge-brown);
+	font-family: outfit;
+	line-height: 150%;
+	position: relative;
+	margin-bottom: 8px;
+}
+.ingredientsWrapper .ingredient::before{
+	content: "";
+	position: absolute;
+	left:8px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 4px;
+	height: 4px;
+	border-radius: 4px;
+	background-color: var(--nutmeg);
+}
+.divider{
+	height: 1px;
+	width: 100%;
+	background-color: var(--light-grey);
+	margin: 32px 0;
+}
+
+.instructionsWrapper .instruction{
+	color: var(--wenge-brown);
+	margin-bottom: 8px;
+	padding-left: 40px;
+	position: relative;
+	font-family: outfit;
+	line-height: 150%;
+}
+.instructionsWrapper .number{
+	position: absolute;
+	top: 0;
+	left: 8px;
+	color: var(--nutmeg);
+	font-weight: 600;
+}
+.instructionsWrapper .title{
+	font-weight: 600;
+}
+
+.nutritionWrapper p{
+	color: var(--wenge-brown);
+	line-height: 150%;
+}
+.nutritionWrapper .field{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-family: outfit;
+	padding-bottom: 12px;
+}
+.nutritionWrapper .field:not(:last-child){
+	border-bottom: 1px solid var(--light-grey);
+}
+.nutritionWrapper .field:not(:first-child){
+	padding-top: 12px;
+}
+.nutritionWrapper .field span{
+	width: 50%;
+}
+.nutritionWrapper .field .label{
+	padding-left: 32px;
+}
+.nutritionWrapper .field .value{
+	text-align: left;
+	font-weight: 600;
+	color: var(--nutmeg)
+}
+
+/* media queries */
+
+@media screen and (max-width: 430px) {
+	.main{
+		border-radius: 0;
+		max-width: 100%;
+		padding: 0;
+	}
+	.main img{
+		border-radius: 0;
+	}
+	body{
+		padding: 0 0 0px 0;
+	}
+	.content{
+		padding: 0 32px 40px;
+	}
+}
+
+
+
+/* attribution style */
+
+.attribution{
+	font-family: outfit;
+	bottom: 20px;
+	padding: 20px 0 10px;
+	margin: 0 auto;
+	max-width: fit-content;
+	text-align: center;
+}
