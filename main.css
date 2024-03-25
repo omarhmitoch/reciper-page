@@ -82,12 +82,14 @@ body{
 	margin-bottom: 16px;
 }
 .timingWrapper .field{
-	margin-bottom: 8px;
 	padding-left: 40px;
 	position: relative;
 	color: var(--wenge-brown);
 	font-family: 'outfit';
 	line-height: 150%;
+}
+.timingWrapper .field:not(:last-child){
+	margin-bottom: 8px;
 }
 .timingWrapper .field::before{
 	content: "";
@@ -119,6 +121,8 @@ body{
 	font-family: outfit;
 	line-height: 150%;
 	position: relative;
+}
+.ingredientsWrapper .ingredient:not(:last-child){
 	margin-bottom: 8px;
 }
 .ingredientsWrapper .ingredient::before{
@@ -141,11 +145,13 @@ body{
 
 .instructionsWrapper .instruction{
 	color: var(--wenge-brown);
-	margin-bottom: 8px;
 	padding-left: 40px;
 	position: relative;
 	font-family: outfit;
 	line-height: 150%;
+}
+.instructionsWrapper .instruction:not(:last-child){
+	margin-bottom: 8px;
 }
 .instructionsWrapper .number{
 	position: absolute;
@@ -168,10 +174,10 @@ body{
 	display: flex;
 	align-items: center;
 	font-family: outfit;
-	padding-bottom: 12px;
 }
 .nutritionWrapper .field:not(:last-child){
 	border-bottom: 1px solid var(--light-grey);
+	padding-bottom: 12px;
 }
 .nutritionWrapper .field:not(:first-child){
 	padding-top: 12px;
